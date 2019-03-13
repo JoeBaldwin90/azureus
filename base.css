@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* Nav bar */
+/* Nav bar */
+
+body {
+  font-family: Oswald;
+  font-size: 16px;
+  line-height: 1.2;
+  background-color: #ffffff;
+  color: #333333;
+  width: 100vw;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  border-top: solid 3px #95c0e9;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+header div {
+  height: 75px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+h1 {
+  width: 50px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 100;
+  margin-left: 15px;
+  padding: 5px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.selected {
+  border-bottom: solid 1px #95c0e9;
+}
+
+/* Homepage */
+/* Homepage */
+
+.intro {
+  position: relative;
+  width: 100vw;
+  height: 160px;
+  transition: all 0.2s;
+}
+
+.intro h2 {
+  width: calc(100vw - 50px);
+  max-width: 1100px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -71%);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.portrait {
+  width: 100vw;
+  height: 130vh;
+  position: relative;
+  transition: all 2s ease;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.boy {
+  background-image: url('boycol.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.girl {
+  background-image: url('girlbw.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+h3 {
+  font-size: 72px;
+  color: #000;
+  text-align: center;
+  letter-spacing: 30px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+}
+
+footer div {
+  color: #fff;
+  text-align: right;
+  padding: 3px;
+}
+
+footer p {
+  margin-right: 5px;
+}
+
+.saturate {
+  filter: saturate(1);
+}
+
+.fadeout {
+  filter: saturate(0);
+}
+
+/* Gallery page */
+/* Gallery page */
+
+.hideshow {
+  display: none;
+}
+
+.gallerynav {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.gallerynav a {
+  margin: 0;
+  padding: 10px;
+}
+
+ul.filters {
+  margin-top: 20px;
+}
+
+.gallery {
+  margin-bottom: 50px;
+}
+
+.gallery .look {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.product {
+  width: calc(50% - 20px);
+  position: relative;
+  margin: 10px;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(149, 192, 233, 0.5);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.product:hover .overlay {
+  opacity: 1;
+}
+
+.product h4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.product p {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-100%);
+  padding: 20px;
+}
+
+.hero {
+  z-index: -1;
+  width: 100vw;
+  height: 25vh;
+  margin: 0 auto;
+  background-image: url(beach.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.75s;
+}
+
+.pop {
+  opacity: 1;
+}
+
+/* Inspire page */
+/* Inspire page */
+
+.slideshow {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.holder {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 400vw;
+  height: 100vh;
+  transition: left 1.5s;
+}
+
+.holder div {
+  float: left;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide-1 {
+  background-image: url(slide-1.jpg);
+}
+
+.slide-2 {
+  background-image: url(slide-2.jpg);
+}
+
+.slide-3 {
+  background-image: url(slide-3.jpg);
+}
+
+.slide-4 {
+  background-image: url(slide-4.jpg);
+}
+
+.bottomnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 50px;
+}
+
+.steps {
+  color: #fff;
+  font-size: 24px;
+}
+
+.prev,
+.next {
+  text-decoration: none;
+  color: #fff;
+  font-size: 64px;
+}
+
+.fixedhead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.navinvert {
+  filter: invert(1);
+}
+
+.white {
+  color: #fff;
+}
+
+/* History  */
+/* History */
+
+.narrowhead {
+  position: fixed;
+  right: 0;
+}
+
+.tight-container {
+  width: calc(50% + 2rem);
+  margin: 0 0 0 auto;
+}
+
+.wide {
+  width: 100%;
+  margin: 0 auto;
+}
+
+blockquote {
+  font-size: 1.5em;
+  color: #444;
+  margin: 0 auto 20px auto;
+  padding: 100px 30px 0 30px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.info {
+  margin: 20px 50px;
+  padding: 30px 50px;
+  text-align: left;
+  border: solid 1px #95c0e9;
+  border-radius: 0.5em;
+  font-family: 'Lato', sans-serif;
+}
+
+.info h2 {
+  font-size: 2em;
+  border-bottom: dashed 1px #ddd;
+  padding-bottom: 5px;
+}
+
+.info p {
+  margin-top: 10px;
+}
+
+.sidehero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(50% - 2rem);
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-image: url(hero.jpg);
+  z-index: -1;
+}
+
+/* Media queries */
+/* Media queries */
+
+@media (max-width: 780px) {
+  .intro {
+    height: 100px;
+  }
+
+  .intro h2 {
+    transform: rotate(270deg);
+    top: 305%;
+    left: 1%;
+  }
+
+  .info {
+    padding: 20px 30px;
+    margin: 25px 25px;
+  }
+}
+
+@media (max-width: 660px) {
+  header {
+    position: sticky;
+  }
+
+  .tight-container {
+  width: calc(100%);
+  margin: 0 auto;
+}
+
+  .narrowhead {
+    position: inherit;
+  }
+
+  .sidehero {
+    width: 100%;
+    height: 20em;
+    background-position: center;
+    position: inherit;
+  }
+
+  blockquote {
+    padding: 35px 25px;
+    margin:  0;
+  }
+
+  div.info:first-of-type {
+    margin-top: 0;
+  }
+
+  .info h2 {
+    font-size: 1.5em;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .intro {
+    height: 50px;
+  }
+
+  .intro h2 {
+    top: -70px;
+    left: 10px;
+    transform-origin: top left;
+    transform: translate(15%, 365%) rotate(90deg);
+  }
+
+  h3 {
+    font-size: 35px;
+    letter-spacing: 4px;
+  }
+
+  .hideshow {
+    display: block;
+  }
+
+  .gallerynav {
+    margin: 25px 0;
+  }
+
+  .gallery .look {
+    justify-content: center;
+  }
+
+  .gallery .product {
+    margin: 5px;
+    width: calc(100% - 20px);
+  }
+
+  .filters li {
+    margin-bottom: 10px;
+  }
+
+  /*     .selected {
+    border-bottom: none;
+    border-left: solid 1px #95c0e9;
+  } */
+}
+
+@media (max-width: 420px) {
+  nav a {
+    margin-left: 5px;
+    letter-spacing: 2px;
+  }
+}
