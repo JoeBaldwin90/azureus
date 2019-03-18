@@ -1,4 +1,4 @@
-console.log('it works')
+uconsole.log('it works')
 
 $(document).on('scroll', function() {
 
@@ -11,14 +11,14 @@ $(document).on('scroll', function() {
   }
 //  desaturate main portrait
   if (scroll > 500) {
-    $('.boy').addClass('fadeout')
+    $('.boy').addClass('desaturate')
   } else {
-    $('.boy').removeClass('fadeout')
+    $('.boy').removeClass('desaturate')
   }
   console.log(scroll)
 })
 
-// fade in sections
+// Do something with each section when it is above 150px from bottom of the viewport. 
 $(document).on('scroll', function() {
   var pageTop = $(document).scrollTop()
   var pageBottom = pageTop + $(window).height() - 150
