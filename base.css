@@ -126,7 +126,7 @@ footer p {
   filter: saturate(1);
 }
 
-.fadeout {
+.desaturate {
   filter: saturate(0);
 }
 
