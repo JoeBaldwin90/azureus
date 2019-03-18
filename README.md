@@ -8,7 +8,7 @@ All images have been sourced from [Unsplash](https://unsplash.com/).
 [View the website](http://azureus.superhi.com/). 
 
 ## Features
-- Auto scrolling slideshow on the "inspire" page. Can be controlled with keyboard events, click events too. 
+- Auto scrolling slideshow on the Inspire page. Can be controlled with keyboard events, click events too. 
 - Scrolling marquee on the shop page. Created using keyframes and JS. 
 - Fade effects created using scroll positions. 
 - Data filters on the Shop page. 
