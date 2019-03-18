@@ -3,7 +3,7 @@ console.log('it works')
 $(document).on('scroll', function() {
 
   var scroll = $(document).scrollTop()
-// Fade out title
+ // Fade out "Azureus" header on scroll
  if (scroll > 150) {
     $('h2').fadeOut(300)
   } else {
@@ -11,14 +11,15 @@ $(document).on('scroll', function() {
   }
 //  desaturate main portrait
   if (scroll > 500) {
-    $('.boy').addClass('fadeout')
+    $('.boy').addClass('desaturate')
   } else {
-    $('.boy').removeClass('fadeout')
+    $('.boy').removeClass('desaturate')
   }
   console.log(scroll)
 })
 
-// fade in sections
+// use a for loop to check if the sections are within the viewport area, less 150px buffer
+// if they are, saturate the image by adding a class. remove it if not. 
 $(document).on('scroll', function() {
   var pageTop = $(document).scrollTop()
   var pageBottom = pageTop + $(window).height() - 150
