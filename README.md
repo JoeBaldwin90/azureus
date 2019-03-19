@@ -13,4 +13,4 @@ All images have been sourced from [Unsplash](https://unsplash.com/).
 - Fade effects created using scroll positions. 
 - Data filters on the Shop page. 
 - Responsive layout experimentation on the History page. 
-
+- Flexbox & responsive design. 
